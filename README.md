@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Creating Folders
+
+Created a component folder.
+Inside this folder add a header.js file
+Created a footer.js file
+
+Created a search folder inside a component folder
+Make a NoQueryView.js File to display a message before any search
+
+Created a gif card component
+Add a gif card styling file in card component
+
 ## Available Scripts
 
 In the project directory, you can run:
