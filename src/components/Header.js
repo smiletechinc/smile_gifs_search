@@ -8,7 +8,7 @@ const Component = styled('div')({
     position: "fixed",
     width: "100%",
     height: "100px",
-    // zIndex: 999
+    zIndex: 999
 });
 
 const Box = styled('h2')({

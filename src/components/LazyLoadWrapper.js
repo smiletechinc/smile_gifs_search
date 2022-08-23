@@ -1,9 +1,9 @@
 import CircularProgress from '@mui/material/CircularProgress';
-
+import { styled } from "@mui/system";
 import React, { useState } from 'react'
 
-
-const LazyLodingStyle = styles('div')({
+export const dimension = { height: "100%", width: "100%" }
+const LazyLodingStyle = styled('div')({
     position: "relative",
     display: "flex",
     borderRadius: "4px",
@@ -22,11 +22,11 @@ const ImgLoadingStyle = styled('div')({
     left: "0"
 });
 
-export const dimension = { height: "100%", width: "100%" }
 
-export const LazyLoadWrapper = ({
-    children }) => {
+
+export const LazyLoadWrapper = ({ children }) => {
     const [imgLoading, setImgLoading] = useState(true)
+
     return (
         <LazyLodingStyle >
             {imgLoading && (
@@ -35,6 +35,7 @@ export const LazyLoadWrapper = ({
                 </ImgLoadingStyle>
             )}
             {children({ onLoad: () => setImgLoading(false) })}
+
         </LazyLodingStyle>
     )
 };

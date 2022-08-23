@@ -1,7 +1,8 @@
 import React from 'react';
-import { LazyLoaderWrapper } from "../../LazyLoadWrapper"
+import { LazyLoadWrapper } from "../LazyLoadWrapper"
+import { styled } from "@mui/material"
 
-
+export const GifCardDimension = { height: "320px", width: "280px" };
 
 const GifCardStyle = styled('div')({
     position: "relative",
@@ -12,15 +13,15 @@ const GifCardStyle = styled('div')({
 })
 
 
-export const GifCardDimension = { height: "320px", width: "280px" };
 
 
-export const gif = ({ item }) => {
+
+export const Gif = ({ item }) => {
     return (
         <GifCardStyle>
-            <LazyLoaderWrapper>
+            <LazyLoadWrapper>
                 {({ onLoad }) => <img onLoad={onLoad} height="100%" width="100%" src={item?.images?.fixed_height_small?.webp} alt="loading..." />}
-            </LazyLoaderWrapper>
+            </LazyLoadWrapper>
         </GifCardStyle>
     )
 }

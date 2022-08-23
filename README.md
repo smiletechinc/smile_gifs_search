@@ -14,6 +14,13 @@ Make a NoQueryView.js File to display a message before any search
 Created a gif card component
 Add a gif card styling file in card component
 
+Created hooks components
+In This component Add useScroll and useTrending files in it
+
+Add a SearchHeader file in components
+
+Searching is working file
+
 ## Available Scripts
 
 In the project directory, you can run:
