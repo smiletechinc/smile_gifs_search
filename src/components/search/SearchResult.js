@@ -3,22 +3,9 @@ import { Gif } from '../../components/card/gif'
 import { Box, Container } from "@mui/material";
 import { useScrollToBottom } from "../../hooks/useScrollToBottom"
 
-// import React from 'react'
-
-// const SearchResult = () => {
-//   return (
-//     <div>
-
-//     </div>
-//   )
-// }
-
-// export default SearchResult
 
 
-
-export const SearchResults = ({ data, onScrollEnd }) => {
-    const loading = true
+export const SearchResults = ({ data, onScrollEnd, loading }) => {
     useScrollToBottom(() => !loading && onScrollEnd())
 
     return <Container maxWidth="lg" style={{ minHeight: "500px" }}>
@@ -27,7 +14,7 @@ export const SearchResults = ({ data, onScrollEnd }) => {
 
         </Box>
         <Box minHeight="50px" py={2} display="flex" justifyContent="center">
-            {loading && <CircularProgress />}
+            {loading || <CircularProgress />}
         </Box>
     </Container>
 }
