@@ -21,6 +21,9 @@ Add a SearchHeader file in components
 
 Searching is working file
 
+Infinite Scrolling Working
+after every 25 card if you scroll it will load more 25 cards and so on..
+
 ## Available Scripts
 
 In the project directory, you can run:
